@@ -12,6 +12,29 @@
   Hello world
   <script src="script.js"></script>
 
+  
+  <form action="#" method="post">
+    <label for="osis">OSIS Number</label>
+    <input type="text" id="osis" name="osis" pattern="[0-9]{8}" maxlength="8" required>
+    <input type="submit" value="Submit">
+  </form>
+
+  <br><br>
+
+  
+  <form action="#" method="post">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}" required>
+    <input type="submit" value="Submit">
+  </form>
+
+  <br><br>
+ 
+  <form action="#" method="post">
+    <label for="creditCard">Credit Card Number</label>
+    <input type="text" id="creditCard" name="creditCard" pattern="(\d{4}[- ]?){3}\d{4}" required>
+    <input type="submit" value="Submit">
+  </form>
 </body>
 
 </html>
